@@ -234,10 +234,26 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 400;
     transition: .6s;
+    position: relative;
 }
 
 .box a:hover {
     color: #92675A;
+}
+
+.box a::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    top: 0;
+    transition: .5s;
+}
+
+.box a:hover::before{
+    width: 100%;
+    background-color: #92675A;
 }
 
 .fourth {
@@ -326,7 +342,7 @@ a {
 
 .productbox {
     width: 23%;
-
+    position: relative;
 }
 
 .productbox img {
@@ -355,6 +371,29 @@ a {
     font-weight: 100;
 }
 
+
+.select{
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    opacity: 0;
+    transition: .5s;
+}
+.productbox:hover .select{
+    opacity: 1;
+}
+
+.addtocard a{
+    color: white;
+    background-color: #bc8b53;
+    padding: 20px 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+.addtocard a:hover{
+    background-color: black;
+}
 .position i {
     font-size: 20px;
     position: fixed;
@@ -392,17 +431,63 @@ a {
 
 .allgallery{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;
 }
 
 .gallerybox{
+    margin-top: 20px;
     width: 24%;
+    position: relative;
+    vertical-align: bottom;
 }
 
 .gallerybox img{
-    width: 100%;  
-    vertical-align: bottom;   
-    margin-top: 20px;
+    width: 100%; 
+    vertical-align: bottom; 
+}
+
+.overlay{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: .5s;
+}
+
+.gallerybox:hover .overlay{
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.text-box h2{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.text-box p{
+    font-family: 'Marcellus', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.text-box{
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 100px;
+    left: 100px;
+    transition: .5s;
+}
+
+.gallerybox:hover .text-box{
+    opacity: 1;
+    z-index: 2;
 }
