@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------HEADER-------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.348);
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 55px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Marcellus', serif;
+    position: relative;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.icons i {
+    margin-left: 20px;
+    color: white;
+    transition: .6s;
+}
+
+.icons i:hover {
+    color: #92675A;
+}
+
+/*-------------FIRST CLASS | SHEET 1----------*/
+.first {
+    padding: 15rem 0;
+    background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    text-align: end;
+    margin-right: 25%;
+    margin-top: -5%;
+}
+
+.image {
+    padding-right: 10px;
+}
+
+section h1 {
+    font-size: 68px;
+    color: white;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 8px;
+}
+
+.text {
+    margin-right: -220px;
+}
+
+.image2 {
+    margin-right: -10px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.button a {
+    transition: .4s;
+    background-color: transparent;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button a:hover {
+    background-color: #BE9C79;
+    border: 1px solid #BE9C79;
+}
+
+/*-------------SECOND CLASS | SHEET 2----------*/
+.second {
+    padding: 8rem 0;
+}
+
+.ourdelicious {
+    text-align: center;
+}
+
+.ourdelicious h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 4px;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.ourdelicious img {
+    padding: 20px;
+}
+
+.span {
+    width: 460px;
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.allproduct {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.product p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    color: grey;
+}
+
+/*-------------THIRD CLASS | SHEET 3----------*/
+
+.third {
+    padding: 8rem 0;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.coffeeherald {
+    text-align: center;
+}
+
+.coffeeherald h1 {
+    font-family: 'Marcellus', serif;
+    letter-spacing: 4px;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.coffeeherald img {
+    padding: 20px;
+}
+
+.coffeeherald .madeit {
+    width: 460px;
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.all {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 32%;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h2,
+p,
+a {
+    margin-left: 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-family: 'Marcellus', serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: rgb(56, 56, 56);
+}
+
+.box a {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    transition: .6s;
+}
+
+.box a:hover {
+    color: #92675A;
+}
+
+.fourth {
+    background-attachment: fixed;
+    margin-top: 100px;
+    padding: 13rem 0;
+    background-position: 50% 25%;
+    background-size: cover;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+}
+
+.fourth a img {
+    width: 15%;
+    margin-top: 17rem;
+    text-align: center;
+    margin-left: 535px;
+}
+
+.container {
+    padding: 2rem 7rem;
+}
+
+.countsbox {
+    padding: 3rem;
+    display: flex;
+}
+
+.digits {
+    text-align: center;
+}
+
+.digits h1 {
+    color: #BE9C79;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 55px;
+    font-family: 'Marcellus', sans-serif;
+}
+
+.digits h3 {
+    margin-bottom: 10px;
+    font-family: 'Marcellus', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.digits p {
+    font-size: 15px;
+    font-family: 'Marcellus', sans-serif;
+    font-weight: 100;
+}
+
+.shop {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+}
+
+.onlineshop {
+    text-align: center;
+}
+
+.onlineshop h1 {
+    font-size: 45px;
+    font-family: 'Marcellus', sans-serif;
+    margin-top: 100px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.onlineshop p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    width: 550px;
+    margin: 15px auto;
+    margin-bottom: 5rem;
+    color: rgb(65, 65, 65);
+}
+
+.allproductsbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productbox {
+    width: 23%;
+
+}
+
+.productbox img {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: .6s;
+    text-align: center;
+}
+
+.productbox img:hover {
+    opacity: 0.5;
+
+}
+
+.productbox a {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Marcellus', sans-serif;
+    color: black;
+}
+
+.productbox h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.position i {
+    font-size: 20px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    bottom: 250px;
+    right: 0px;
+    color: rgb(255, 68, 68);
+}
+
+.oursweetgallery {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.oursweetgallery h1 {
+    font-size: 45px;
+    font-family: 'Marcellus', sans-serif;
+    margin-top: 100px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.oursweetgallery p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    width: 550px;
+    margin: 15px auto;
+    margin-bottom: 5rem;
+    color: rgb(65, 65, 65);
+}
+
+.allgallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.gallerybox{
+    width: 24%;
+}
+
+.gallerybox img{
+    width: 100%;  
+    vertical-align: bottom;   
+    margin-top: 20px;
+}
